@@ -1,20 +1,13 @@
 # Site-Generico
 
-Gerenciador de Pacotes utilizado no projeto: Yarn
-
-Baixando Yarn:
-``` bash
-#com node instalado
-npm install -g yarn
-```
+Gerenciador de Pacotes utilizado no projeto: npm
 
 Baixando Dependências:
 ``` bash
-yarn install
+npm i
 ```
 
-
-Iniciando Projeto:
+Rodando o Projeto:
 ``` bash
-yarn dev
+npm run dev
 ```
