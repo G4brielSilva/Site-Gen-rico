@@ -1,0 +1,23 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header-container
+{
+    background-color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.btn-especialist
+{
+   font-size: 20px;
+   color: white;
+   border-radius: 8px;
+   border-color: #0067ec;
+   padding: 4px 8px;
+   background-color: #0067ec;
+   cursor: pointer; 
+}
