@@ -1,3 +1,4 @@
 node_modules
 .tool-versions
 #esse .tools-versions é um arquivo de um gerenciador de versões de linguagens chamado asdf, só ignorar :)
+src/configs/configs.ts
