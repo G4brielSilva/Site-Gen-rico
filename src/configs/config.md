@@ -1,0 +1,1 @@
+Nesse diretório fica um arquivo, chamado configs.ts com algumas informações sobre, o servidor smtp de envio de email do gmail, com o acesso da conta que você quer utilizar para o envio :)
