@@ -1,14 +1,27 @@
 import * as nodemailer from 'nodemailer';
 import config from '../configs/configs';
 
+interface IMailFormat {
+    from: string;
+    to: string;
+    subject: string;
+    message: string;
+}
+
+
 // classe pra organizar os métodos de send email
-class Mail { 
-    constructor(
-        public from?: string, // de quem
-        public to?: string, // para quem
-        public subject?: string, // assunto
-        public message?: string // mensagem
-    ) {}
+class Email { 
+    private from?: string; // de quem
+    private to?: string; // para quem
+    private subject?: string; // assunto
+    private message?: string; // mensagem
+    
+    constructor(mail: IMailFormat) {
+        this.from = mail.from;
+        this.to = mail.to;
+        this.subject = mail.subject;
+        this.message = mail.message;
+    }
 
     sendMail(){
         let mailOptions = { // objeto com informações utilizadas
@@ -36,4 +49,4 @@ class Mail {
     }
 }
 
-export default new Mail;
+export { Email, IMailFormat };
