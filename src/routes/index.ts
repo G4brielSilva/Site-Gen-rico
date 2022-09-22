@@ -1,6 +1,6 @@
 import {Router} from 'express'
 import { helloWorldRoutes } from './helloWorld.route';
-import { formFaleEspecialistaRoutes } from './formFaleEspecialista.route';
+import { formsContatosRoutes} from './formsContatos.route';
 const router = Router();
 
 /**
@@ -10,6 +10,6 @@ const router = Router();
  */
 
 router.use('/',helloWorldRoutes);
-router.use('/',formFaleEspecialistaRoutes);
+router.use('/',formsContatosRoutes);
 
 export{router}
