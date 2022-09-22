@@ -1,10 +1,14 @@
-import { Router, Request, Response } from 'express';
+import { Router, Request, Response } from "express";
 
 const helloWorldRoutes = Router();
 
-// Rota inicial, equivalente a home :)
-helloWorldRoutes.get('/',(request: Request, response: Response)=> {
-    response.json({message: 'Hello World with Typescript'});
-})
+//Essa aqui é a rota base para definir o carregamento do html, coloque sua rota e comente a outra
+// cons abs_path = 'C:\';
+const abs_path = '/media/gabriel/Data/Projetos/Estudo/SiteGenerico'
 
-export {helloWorldRoutes}
+helloWorldRoutes.get('/',(req: Request, res: Response)=> {
+    // res.json({message: 'Hello World with Typescript'});
+    res.sendFile(abs_path + 'src/pages/home.html');
+});
+
+export {helloWorldRoutes};
